@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="./guess.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyess Number</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="loading-spinner">
+    <img src="./Eclipse.gif" alt="Loading...">
+  </div>
+
+  <a href="../../home.html">
+    <button class="exit">
+      <span class="back"></span>
+      <span class="front"></span>
+    </button>
+  </a>
+
+  <div class="wrapper">
+    <header><h2>Guess a number from 1 to 100</h2></header>
+    <p class="guess"></p>
+    <div class="input-field">
+      <input type="number" />
+      <button id="check">Check</button>
+    </div>
+    <p>You have <span class="chances">10</span> chances</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

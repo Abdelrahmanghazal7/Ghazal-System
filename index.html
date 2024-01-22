@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/user.png" type="image/x-icon">
+    <title>Login-system</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/snap.css">
+</head>
+
+<body>
+
+    <section class="splash" id="splash">
+        <div id="session">
+            <h2 class="hero" data-text="你好朋友" id="wel">
+                <span>你好朋友</span>
+            </h2>
+
+            <h2 class="hero" data-text="HEY BUDDY" id="come">
+                <span>HEY BUDDY;&#41;</span>
+            </h2>
+        </div>
+    </section>
+
+    <div class="banner">
+        <div class="monitor">
+            <p class="smart">GET READY FOR FUN >>> <span class="logo">🎮</span></p>
+        </div>
+
+        <figure class="swing">
+            <img src="./images/mask.png">
+        </figure>
+    </div>
+
+    <div class="page">
+        <header>
+            <div id="toggle">
+                <img src="./images/vector.png" alt="">
+            </div>
+            <div id="menu">
+                <ul class="unstyled-list">
+                    <a href="#popup1" id="lol1">
+                        <li class="hide">
+                            <span class="up-pass"></span>
+                            Change Password
+                        </li>
+                    </a>
+                    <span class="line"></span>
+
+                    <a href="#popup2" id="lol2">
+                        <li class="hide">
+                            <span class="up-name"></span>
+                            Change Name
+                        </li>
+                    </a>
+                    <span class="line"></span>
+
+                    <a href="#popup3" id="lol3">
+                        <li class="hide">
+                            <span class="delete-ac"></span>
+                            Delete Account
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main">
+            <input type="checkbox" id="check" aria-hidden="true">
+
+            <div class="signup">
+                <form id="signUpForm">
+                    <label for="check" aria-hidden="true">Sign up</label>
+                    <span class="auth">
+                        sign with
+                        <img src="./images/google.png" id="google" alt="">
+                    </span>
+                    <span class="or">or</span>
+                    <input id="signUpName" type="text" name="txt" placeholder="User name" autocomplete="name" required>
+                    <input id="signUpEmail" type="email" name="email" placeholder="Email" autocomplete="email" required>
+                    <input id="signUpPassword" type="password" name="password" placeholder="Password"
+                        autocomplete="new-password" required>
+                    <p id="exist"></p>
+
+                    <button id="signUpBtn">Sign up</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form id="loginForm">
+                    <label for="check" aria-hidden="true">Login</label>
+                    <input id="signInEmail" type="email" name="email" placeholder="Email" autocomplete="email" required>
+                    <input id="signInPassword" type="password" name="password" placeholder="Password"
+                        autocomplete="current-password" required>
+                    <p id="incorrect"></p>
+
+                    <button id="loginBtn">Login</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="popup1">
+            <div class="popup">
+                <h2>New Password</h2>
+                <p id="passwordError"></p>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <input id="existPasswordEmail" type="email" name="email" placeholder="Enter Your Email"
+                        autocomplete="email" required>
+                    <input id="newPassword" type="password" name="password" placeholder="Enter Your New Password"
+                        autocomplete="new-password" required>
+
+                    <button id="changePassword">Change</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup2">
+            <div class="popup">
+                <h2>New Name</h2>
+                <p id="nameError"></p>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <input id="existNameEmail" type="email" name="email" placeholder="Enter Your Email"
+                        autocomplete="email" required>
+                    <input id="newName" type="text" name="name" placeholder="Enter Your New Name" autocomplete="name"
+                        required>
+
+                    <button id="changeName">Change</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup3">
+            <div class="popup">
+                <h2>Delete Account</h2>
+                <p id="emailError"></p>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <input id="existdeletEmail" type="email" name="email" placeholder="Enter Your Email"
+                        autocomplete="email" required>
+
+                    <button id="deleteAccount">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>

@@ -10,6 +10,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .page {
@@ -29,7 +32,6 @@ body {
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
-	margin-top: 55px;
 }
 
 #check {
@@ -488,7 +490,7 @@ div#menu ul li i {
 .banner {
 	display: flex;
 	justify-content: flex-end;
-	position: relative;
+	position: absolute;
 	top: 40px;
 	right: 40px;
 }
